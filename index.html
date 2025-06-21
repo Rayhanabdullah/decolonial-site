@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullah Al-Rayhan | Critical DS Blog</title>
+  <style>
+    :root {
+      --bg-light: #ffffff;
+      --bg-dark: #111827;
+      --text-light: #1f2937;
+      --text-dark: #f3f4f6;
+      --accent: #10b981;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark {
+      background-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--accent);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .post {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+
+    .toggle-btn {
+      background: none;
+      border: 2px solid white;
+      padding: 0.3rem 1rem;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Rayhan's Reflections</h1>
+    </div>
+    <div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <button class="toggle-btn" onclick="toggleMode()">Toggle Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="post">
+      <h2>Decolonizing Development: Beyond the Eurocentric Paradigm</h2>
+      <p><em>Posted on June 22, 2025</em></p>
+      <p>This post explores how mainstream development theory often reproduces colonial hierarchies and the urgent need to root our analysis in Islamic epistemologies and indigenous traditions.</p>
+    </section>
+
+    <section class="post">
+      <h2>Islamic Resistance and Cultural Hegemony</h2>
+      <p><em>Posted on June 15, 2025</em></p>
+      <p>From Palestine to Bangladesh, Islamic resistance challenges not just political occupation but epistemic domination. Gramsci, but decolonized.</p>
+    </section>
+
+    <section class="post">
+      <h2>Critical DS: The Urgency of Praxis</h2>
+      <p><em>Posted on June 10, 2025</em></p>
+      <p>Development must move from critique to action, centering communities, faith, and justice in resisting neoliberal and authoritarian projects.</p>
+    </section>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
